@@ -5,7 +5,6 @@ import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
     fastify.get('/user/:id', (req : FastifyRequest, reply : FastifyReply) => {
         const {id}  = req.params;
         reply.send(`Página do usuário ${id}`)
-        console.log(req)
     })
 }
 
